@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Atividade Avaliativa 02 - Gerador de Crachás</title>
+</head>
+<body>
+    <header>
+        <div id="faixa-superior"></div>
+        <div id="menu">
+            <a href="index.html">
+                <img id="logo" src="img/logo.png" alt="Logotipo SENAI" />
+            </a>   
+            <nav>
+                <a href="gerador.html">Gerar Crachá</a>
+            </nav>         
+        </div>
+    </header>
+
+    <div id="container">
+        <h1>Gerador de Crachás</h1>
+        <div id="geradorContainer">
+            <div id="divForm">
+                <h3>Dados do funcionário</h3>
+                <form id="frmRegistro" name="frmRegistro" action="#">                    
+                    <input id="inNome" name="inNome" type="text" placeholder="Nome do funcionário">
+                    <input id="inFone" name="inFone" type="tel" placeholder="Telefone">
+                    <input id="inMail" name="inMail" type="email" placeholder="E-mail">
+                    <input id="inCargo" name="inCargo" type="text" placeholder="Cargo do Funcionário">
+                    <input id="inDepto" name="inDepto" type="text" placeholder="Departamento do Funcionário">
+                    <input id="inImg" name="inImg" type="file" accept=".jpeg, .jpg, .png, .bmp" placeholder="Selecione uma foto">
+                    <input id="inQRCode" name="inQRCode" type="file" accept=".jpeg, .jpg, .png, .bmp" placeholder="Selecione a imagem do QR Code">
+                    <div class="div-botoes">
+                        <button id="btnEnviar" name="btnEnviar" type="button">Enviar</button>  
+                    </div>            
+                </form>
+            </div>
+            <div id="divCracha">
+                <div id="divCrachaContent">
+                    <div id="area-foto">
+                        
+                    </div>
+                    <p>
+                        <span>Nome:</span> <span id="spNome" class="spData"></span>
+                    </p>
+                    <p>
+                        <span>Cargo:</span> <span id="spCargo" class="spData"></span>
+                    </p>
+                    <p>
+                        <span>Depto:</span> <span id="spDepto" class="spData"></span>
+                    </p>
+                    <div id="qrCode">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div id="mensagem-erro">Mensagem de erro:</div>        
+    </div>
+
+    <footer>
+        SENAI Jaú - OP 7.90<br/>
+        Curso Técnico em Desenvolvimento de Sistemas
+    </footer>    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
